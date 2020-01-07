@@ -1,0 +1,11 @@
+const express =require('express');
+const app=express();
+const port=8000;
+
+app.listen(port,function(err){
+    if(err){
+        console.log(`error occurs in ${port}`);
+
+    }
+    console.log(`server is running on the port: ${port}`);
+});
