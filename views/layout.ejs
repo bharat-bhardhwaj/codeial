@@ -13,6 +13,13 @@
 
     <body>
         <%- include('_header'); %>
+
+        <% if(flash.success && flash.success.length>0){%>
+            <h2>
+                <%=flash.success%>
+            </h2>
+
+        <%}%>
         
         <main id="layout-main">
             <%- body %>
@@ -25,4 +32,4 @@
         <%- script %>
         
     </body>
-</html>vv
+</html>
